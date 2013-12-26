@@ -1,0 +1,7 @@
+File customization configurations (constructor).
+
+create method with full parameters.
+
+Visitor Pattern for feed forward (values -- backpropagation).
+
+strategy pattern for voting.
