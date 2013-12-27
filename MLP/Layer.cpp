@@ -11,8 +11,8 @@ Layer::Layer(int numOfNeurons)
 
 void Layer::forward()
 {	
-	try
-	{
+ 	try
+ 	{
 		int weightPerNeuron = m_Weights.size() / m_Neurons.size(), inc = 0;
 		int size = m_Neurons.size();
 		for (int i = 0 ; i < size ; i++)
@@ -24,11 +24,11 @@ void Layer::forward()
 			}
 			m_Neurons[i]->m_Value = (  1 / (1 + exp(  (-1 * m_Neurons[i]->m_Netk)  )));
 		}	
-	}
-	catch(exception & e)
-	{
-		//log.
-	}
+ 	}
+ 	catch(exception & e)
+ 	{
+ 		//log.
+ 	}
 }
 
 void Layer ::setLayerNeuronsValues(vector<float>& fValues)
@@ -108,4 +108,15 @@ void Layer::setWeights( vector<float>& fWeights )
 	{
 		m_Weights.push_back(fWeights.at(i));
 	}
+}
+
+vector<float> Layer::getNeuronsValues()
+{
+	int size = m_Neurons.size();
+	vector<float> values;
+	for(int i = 0; i < size;i++)
+	{
+		values.push_back(m_Neurons[i]->m_Value);
+	}
+	return values;
 }

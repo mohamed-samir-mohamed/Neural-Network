@@ -11,6 +11,7 @@ public:
 	Layer (int fNumOfNeurons);
 	void forward();
 	void setLayerNeuronsValues(vector<float>& fValues);
+	vector<float> getNeuronsValues();
 	void setLayerweightsValues( vector<float>& fValues);
 	void setLayerWieghtAt(int index,float value);
 	int  getNeuronsCount();

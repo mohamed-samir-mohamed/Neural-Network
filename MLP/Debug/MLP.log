@@ -1,19 +1,9 @@
-﻿Build started 12/27/2013 7:33:51 PM.
+﻿Build started 12/28/2013 1:11:16 AM.
      1>Project "F:\AIEngine\GP\units' placment imp\Generic Multi Layer Classifier Neural Network\MLP\MLP.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MLP.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Layer.cpp NeuralNetwork.cpp main.cpp
-         NeuralNetwork.cpp
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\neuralnetwork.cpp(57): warning C4101: 'weightsCount' : unreferenced local variable
-         Layer.cpp
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\layer.cpp(28): warning C4101: 'e' : unreferenced local variable
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\layer.cpp(75): warning C4101: 'e' : unreferenced local variable
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\layer.cpp(87): warning C4101: 'e' : unreferenced local variable
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\layer.cpp(99): warning C4101: 'e' : unreferenced local variable
-         Generating Code...
-     1>f:\aiengine\gp\units' placment imp\generic multi layer classifier neural network\mlp\layer.cpp(79): warning C4715: 'Layer::getNuronAt' : not all control paths return a value
-         Skipping... (no relevant changes detected)
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -37,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.19
+Time Elapsed 00:00:01.15

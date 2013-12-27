@@ -36,11 +36,8 @@ int NeuralNetworkCalssifier::classify(vector<float> pattern)
 	for(int i = 1 ; i < layersCount; i++ )
 	{
 		m_Layers[i]->forward();
-		for (int j = 0 ; j < m_Layers[i]->getNeuronsCount(); j++)
-		{
-			if (i < layersCount - 1)//not output layer.
-			m_Layers[i+1]->setPreviousLayerNeuronValueAt(j,m_Layers[i]->getNuronAt(j)->m_Value);
-		}
+		if(i < layersCount - 1)//not output layer.
+			m_Layers[i+1]->setPreviousLayerNeuronsValues(m_Layers[i]->getNeuronsValues());
 	}
 	int sizeOfOutputLayer = m_Layers[layersCount-1]->getNeuronsCount();
 	for(int i = 0 ; i < sizeOfOutputLayer; i++)
