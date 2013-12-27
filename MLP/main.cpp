@@ -3,6 +3,7 @@
 #include "NeuralNetwork.h"
 #include <time.h>
 #include <omp.h>
+#include "FileReader.h"
 using namespace std;
 
 
@@ -110,5 +111,8 @@ int main()
 // 		ff [i] = data [6][i];	
 // 	}
 // 	int gg = obj.classify(ff);
+
+
+	NeuralNetworkCalssifier f ("C://Users//Muhammad Samir//Desktop//test.txt");
 	return 0;
 }

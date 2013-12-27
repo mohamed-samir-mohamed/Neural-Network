@@ -18,7 +18,7 @@ public:
 	vector<vector<float>>& getWeights();
 
 private:
-	fstream mInputStream;
+	ifstream mInputStream;
 	int m_NumberOfLayers;
 	vector<int> m_NeuronsPerLayer;
 	vector<vector<float>> m_Wieghts;

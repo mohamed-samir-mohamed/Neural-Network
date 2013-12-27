@@ -13,8 +13,9 @@ public:
 	void setLayerNeuronsValues(vector<float>& fValues);
 	void setLayerweightsValues( vector<float>& fValues);
 	void setLayerWieghtAt(int index,float value);
-	int getNeuronsCount();
-	int getWeightsCount();
+	int  getNeuronsCount();
+	void setWeights(vector<float>& fWeights);
+	int  getWeightsCount();
 	void setPreviousLayerNeuronsValues(vector<float>& vlaues);
 	void setPreviousLayerNeuronValueAt(int index,float value);
 	std::shared_ptr<Neuron> getNuronAt(int index);

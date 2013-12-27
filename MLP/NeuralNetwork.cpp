@@ -21,6 +21,7 @@ NeuralNetworkCalssifier::NeuralNetworkCalssifier( string filePath )
 {
 	m_FileReader.load(filePath);
 	initNeuralNetwork(m_FileReader.getNeuronsPerLayer());
+	loadWieghts(m_FileReader.getWeights());
 }
 
 int NeuralNetworkCalssifier::classify(vector<float> pattern)
@@ -58,13 +59,7 @@ void NeuralNetworkCalssifier:: loadWieghts(vector<vector<float>> weightVectors)
 	//for each weight vector.
 	for (int i = 0 ; i < count ; i++)
 	{
-		weightsCount = weightVectors[i].size();
-
-		//starting form layer #1 push weights
-		for (int j = 0 ; j < weightsCount ; j++ )
-		{
-			m_Layers[c]->setLayerWieghtAt(j,weightVectors[i][j]);
-		}
+		m_Layers[c]->setWeights(weightVectors[i]);
 		c++;
 	}
 }

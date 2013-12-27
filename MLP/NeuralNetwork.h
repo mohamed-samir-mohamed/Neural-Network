@@ -15,11 +15,9 @@ public:
 	void initNeuralNetwork(vector<int> NeuronsPerLayer);
 	int classify(vector<float> pattern);
 	void loadWieghts(vector<vector<float>> weightVectors);
-	//create (file). file complete info about network.
-	//create (parametrized with all info).
 
 private:
-	vector<std::shared_ptr<Layer>> m_Layers;//make use of smart pointers.
+	vector<std::shared_ptr<Layer>> m_Layers;
 	static int indexOfMax(vector<float>);
 	NeuralNetworkFileReader m_FileReader;
 };

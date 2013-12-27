@@ -100,3 +100,12 @@ void Layer::setLayerWieghtAt( int index,float value)
 	{
 	}
 }
+
+void Layer::setWeights( vector<float>& fWeights )
+{
+	int size = fWeights.size();
+	for(int i = 0; i < size; i++)
+	{
+		m_Weights.push_back(fWeights.at(i));
+	}
+}
