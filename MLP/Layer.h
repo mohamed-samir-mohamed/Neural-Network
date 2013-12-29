@@ -1,8 +1,9 @@
 #ifndef LAYER_H
 #define LAYER_H
-#include "Neuron.h"
 #include <vector>
 using namespace std;
+
+class Neuron;
 
 class Layer
 {
@@ -22,7 +23,7 @@ public:
 	std::shared_ptr<Neuron> getNuronAt(int index);
 
 private:
-	 vector<std::shared_ptr<Neuron>>  m_Neurons; //make use of smart pointers.
+	 vector<std::shared_ptr<Neuron>>  m_Neurons;
 	 vector<float> m_PreviousLayerValues;
 	 vector<float> m_Weights;
 };

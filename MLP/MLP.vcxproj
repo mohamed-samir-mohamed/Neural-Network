@@ -75,13 +75,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\units%27 placment imp\Generic Multi Layer Classifier Neural Network\MLP\FileReader.h" />
+    <ClInclude Include="NeuralNetworkFileReader.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="NeuralNetwork.h" />
     <ClInclude Include="Neuron.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\units%27 placment imp\Generic Multi Layer Classifier Neural Network\MLP\FileReader.cpp" />
+    <ClCompile Include="NeuralNetworkFileReader.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />

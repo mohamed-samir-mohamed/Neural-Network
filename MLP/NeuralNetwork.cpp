@@ -1,5 +1,8 @@
 #include "NeuralNetwork.h"
+#include "Layer.h"
+#include "NeuralNetworkFileReader.h"
 #include <string>
+#include <vector>
 
 int NeuralNetworkCalssifier::indexOfMax(vector<float> arr)
 {
@@ -19,9 +22,10 @@ int NeuralNetworkCalssifier::indexOfMax(vector<float> arr)
 
 NeuralNetworkCalssifier::NeuralNetworkCalssifier( string filePath )
 {
-	m_FileReader.load(filePath);
-	initNeuralNetwork(m_FileReader.getNeuronsPerLayer());
-	loadWieghts(m_FileReader.getWeights());
+	m_FileReader = std::unique_ptr<NeuralNetworkFileReader>(new NeuralNetworkFileReader());
+	m_FileReader->load(filePath);
+	initNeuralNetwork(m_FileReader->getNeuronsPerLayer());
+	loadWieghts(m_FileReader->getWeights());
 }
 
 int NeuralNetworkCalssifier::classify(vector<float> pattern)

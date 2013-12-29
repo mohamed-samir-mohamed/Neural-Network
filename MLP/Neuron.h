@@ -11,5 +11,4 @@ public:
 	 //weight may be here
 	 //activation function as a function object or template method.
 };
-
 #endif

@@ -24,7 +24,7 @@
     <ClInclude Include="Neuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\units%27 placment imp\Generic Multi Layer Classifier Neural Network\MLP\FileReader.h">
+    <ClInclude Include="NeuralNetworkFileReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClCompile Include="NeuralNetwork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\units%27 placment imp\Generic Multi Layer Classifier Neural Network\MLP\FileReader.cpp">
+    <ClCompile Include="NeuralNetworkFileReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
